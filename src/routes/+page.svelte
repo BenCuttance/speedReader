@@ -126,6 +126,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+    width: 100%;
   }
 
   #upload-text-area {
@@ -144,6 +145,11 @@
       transform 120ms ease,
       box-shadow 120ms ease,
       border-color 120ms ease;
+
+      @media (max-width: 525px) {
+        width: 90%;
+        padding: 0.5rem;
+      }
   }
 
   #upload-text-area:focus {
